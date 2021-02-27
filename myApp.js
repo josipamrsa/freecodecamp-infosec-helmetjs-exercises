@@ -14,7 +14,7 @@ app.use(helmet.hidePoweredBy());
 // For example, clicking a button on the website doesn't do what you think
 // it does (submits some data), but instead there is an invisible button over
 // it that likes someone's Facebook post
-app.use(helmet.frameguard({ action: 'deny '}));
+app.use(helmet.frameguard({ action: 'deny' }));
 
 
 
