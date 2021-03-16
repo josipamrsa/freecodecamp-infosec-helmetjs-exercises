@@ -18,7 +18,7 @@ app.use(helmet.frameguard({ action: 'deny' }));
 
 // xssFilter - preventira cross-side-scripting napade (sanitizira input korisnika -
 // važno da korisnik ne šalje kao upit nekakvu malicioznu skriptu)
-app.use(helmet.xssFilter());
+app.use(helmet.xssFilter({}));
 
 
 
