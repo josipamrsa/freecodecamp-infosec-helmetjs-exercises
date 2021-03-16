@@ -16,7 +16,7 @@ app.use(helmet.hidePoweredBy());
 // it that likes someone's Facebook post
 app.use(helmet.frameguard({ action: 'deny' }));
 
-//app.use(helmet.xssFilter());
+app.use(helmet.xssFilter());
 
 
 
