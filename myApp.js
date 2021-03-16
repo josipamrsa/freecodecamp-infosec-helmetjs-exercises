@@ -16,7 +16,9 @@ app.use(helmet.hidePoweredBy());
 // it that likes someone's Facebook post
 app.use(helmet.frameguard({ action: 'deny' }));
 
-//app.use(helmet.xssFilter());
+// xssFilter - preventira cross-side-scripting napade (sanitizira input korisnika -
+// važno da korisnik ne šalje kao upit nekakvu malicioznu skriptu)
+app.use(helmet.xssFilter());
 
 
 
